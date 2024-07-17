@@ -4,23 +4,23 @@ GET http://localhost:3001/
 GET http://localhost:3001/api/notes/
 
 ###
-GET http://localhost:3001/api/notes/669773a68f27c55feb45cf5d
+GET http://localhost:3001/api/notes/66980c6346c48fe3fabe3e11
 
 ###
 POST http://localhost:3001/api/notes/ HTTP/1.1
 content-type: application/json
 
 {
-    "content": "Does everything still work ? 2",
+    "content": "hello",
     "important": true
 }
 
 ###
-PUT http://localhost:3001/api/notes/669773a68f27c55feb45cf5d
+PUT http://localhost:3001/api/notes/66980c6346c48fe3fabe3e11
 Content-Type: application/json
 
 {
-    "content": "Does put requests work ?",
+    "content": "hi",
     "important": false
 }
 
