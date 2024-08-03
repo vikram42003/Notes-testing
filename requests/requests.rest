@@ -12,7 +12,8 @@ content-type: application/json
 
 {
     "content": "hello",
-    "important": true
+    "important": true,
+    "userId": "669fe5cb6414dde66428656b"
 }
 
 ###
@@ -26,3 +27,25 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3001/api/notes/669773a68f27c55feb45cf5d
+
+###
+GET http://localhost:3001/api/users
+
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "root",
+    "name": "Superuser",
+    "password": "salainen"
+}
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "username": "root",
+    "password": "salainen"
+}
