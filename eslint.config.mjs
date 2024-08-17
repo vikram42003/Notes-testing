@@ -10,6 +10,7 @@ export default [
       sourceType: "commonjs",
       globals: {
         ...globals.node,
+        ...globals.browser,
       },
       ecmaVersion: "latest",
     },
@@ -29,5 +30,5 @@ export default [
   },
   {
     ignores: ["dist/**", "build/**", "frontend/**"],
-  }
+  },
 ];
